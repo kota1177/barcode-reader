@@ -89,7 +89,3 @@ const startScanner = () => {
         console.log(result.codeResult.code);
     });
 }
-
-Quagga.onProcessed部分は、バーコードに枠を表示する部分です。
-
- 
