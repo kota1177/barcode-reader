@@ -96,7 +96,15 @@ window.addEventListener('load',function(event){
       DetectedCode='';
       DetectedCount=0;
     }
-            //カメラ停止
+
+  });
+});
+</script>
+</head>
+<body>
+  <div><canvas id="preview"></canvas></div>
+  <textarea id="jan" rows="8" cols="40"></textarea>
+          //カメラ停止
         //video stop
         let mediastream = this.video.srcObject;
         let tracks = mediastream.getTracks();
@@ -107,13 +115,7 @@ window.addEventListener('load',function(event){
         });
         this.video.srcObject=null;
         this.blnCameraInit==false
-  });
-});
-</script>
-</head>
-<body>
-  <div><canvas id="preview"></canvas></div>
-  <textarea id="jan" rows="8" cols="40"></textarea>
+  
 </body>
 </html>
 
